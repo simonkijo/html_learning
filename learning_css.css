@@ -1,0 +1,13 @@
+body {
+     background-color: linen;
+ }
+ h1 {
+    color: maroon;
+    margin-left: 40px;
+ }
+div,small{
+    border:2px solid #c00;
+    margin:2px;
+    padding:10px;
+}
+.green{color:#00ff00;}
