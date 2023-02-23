@@ -10,5 +10,16 @@
     <h1>HTML</h1>
     <div>hello am learning <b><small>html,css,javascript</small></b></div>
     <p class="green">learning class selector in CSS</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date();">Click me to display date and time</button>
+    <p id="demo"></p>
+
+    <p id="dText">What can javascript do</p>
+    <button type="button" onclick="document.getElementById('dText').innerHTML='Hello kijo'">Click me</button>
+
+    <p>javascript can change attribute value</p>
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">bulb On</button>
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">bulb off</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px;">
 </body>
 </html>
