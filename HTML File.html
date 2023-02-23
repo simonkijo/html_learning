@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>HTML LEARNING</title>
     <link rel="stylesheet" href="learning_css.css" media="all"/>
-
+    <script>
+        function changeText(){
+            document.getElementById('headJS').innerHTML="Hello Kijo, <q>JAVASCRIPT CAN BE PLACED IN HEAD HTML ELEMENT</q>";
+        }
+    </script>
 </head>
 <body>
     <h1>HTML</h1>
@@ -21,5 +25,27 @@
     <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">bulb On</button>
     <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">bulb off</button>
     <img id="myImage" src="pic_bulboff.gif" style="width:100px;">
+
+    <p id="chFont">javascript can change font size</p>
+    <button type="button" onclick="document.getElementById('chFont').style.fontSize='20px'">click me</button>
+
+    <p id="txtHide">javascript can hide or show html element</p>
+    <button type="button" onclick="document.getElementById('txtHide').style.display='none'">Hide Me</button>
+    <button type="button" onclick="document.getElementById('txtHide').style.display='block'">Show Me</button>
+
+    <p id="headJS">Hello Simon, <q>JAVASCRIPT CAN BE PLACED IN HEAD HTML ELEMENT</q></p>
+    <button type="button" onclick="changeText()">Try it</button>
+
+    <p id="bodyJS">Hello Marry, <q>JAVASCRIPT CAN BE PLACED IN BODY HTML ELEMENT</q></p>
+    <button type="button" onclick="changeTextB()">Try it</button>
+
+    <p id="externalJS">EXTERNAL JAVASCRIPT</p>
+    <button type="button" onclick="externalText()">Try it</button>
+    <script src="learning_js.js"></script>
+    <script>
+        function changeTextB(){
+            document.getElementById('bodyJS').innerHTML="Hello Theodory, <q>JAVASCRIPT CAN BE PLACED IN BODY HTML ELEMENT</q>";
+        }
+    </script>
 </body>
 </html>
